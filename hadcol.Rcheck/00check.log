@@ -1,0 +1,95 @@
+* using log directory ‘/Users/hadley/Dropbox (RStudio)/rstudio-training/18-tidy-tools/tidy-tools/hadcol.Rcheck’
+* using R version 3.4.2 (2017-09-28)
+* using platform: x86_64-apple-darwin15.6.0 (64-bit)
+* using session charset: UTF-8
+* using options ‘--no-manual --as-cran’
+* checking for file ‘hadcol/DESCRIPTION’ ... OK
+* this is package ‘hadcol’ version ‘0.0.0.9000’
+* package encoding: UTF-8
+* checking CRAN incoming feasibility ... NOTE
+Maintainer: ‘Hadley Wickham <hadley@rstudio.com>’
+
+Version contains large components (0.0.0.9000)
+
+Possibly mis-spelled words in DESCRIPTION:
+  Hadley's (3:8)
+
+Unknown, possibly mis-spelled, fields in DESCRIPTION:
+  ‘Remotes’
+
+Package has a VignetteBuilder field but no prebuilt vignette index.
+
+The Title field should be in title case, current version then in title case:
+‘Hadley's utilities for adding columns’
+‘Hadley's Utilities for Adding Columns’
+* checking package namespace information ... OK
+* checking package dependencies ... OK
+* checking if this is a source package ... OK
+* checking if there is a namespace ... OK
+* checking for executable files ... OK
+* checking for hidden files and directories ... OK
+* checking for portable file names ... OK
+* checking for sufficient/correct file permissions ... OK
+* checking whether package ‘hadcol’ can be installed ... OK
+* checking installed package size ... OK
+* checking package directory ... OK
+* checking DESCRIPTION meta-information ... OK
+* checking top-level files ... OK
+* checking for left-over files ... OK
+* checking index information ... OK
+* checking package subdirectories ... OK
+* checking R files for non-ASCII characters ... OK
+* checking R files for syntax errors ... OK
+* checking whether the package can be loaded ... OK
+* checking whether the package can be loaded with stated dependencies ... OK
+* checking whether the package can be unloaded cleanly ... OK
+* checking whether the namespace can be loaded with stated dependencies ... OK
+* checking whether the namespace can be unloaded cleanly ... OK
+* checking loading without being on the library search path ... OK
+* checking use of S3 registration ... OK
+* checking dependencies in R code ... OK
+* checking S3 generic/method consistency ... OK
+* checking replacement functions ... OK
+* checking foreign function calls ... OK
+* checking R code for possible problems ... NOTE
+add_col: no visible global function definition for ‘setNames’
+Undefined global functions or variables:
+  setNames
+Consider adding
+  importFrom("stats", "setNames")
+to your NAMESPACE file.
+* checking Rd files ... OK
+* checking Rd metadata ... OK
+* checking Rd line widths ... OK
+* checking Rd cross-references ... OK
+* checking for missing documentation entries ... OK
+* checking for code/documentation mismatches ... OK
+* checking Rd \usage sections ... WARNING
+Undocumented arguments in documentation object 'add_cols'
+  ‘x’ ‘y’
+
+Functions with \usage entries need to have the appropriate \alias
+entries, and all their arguments documented.
+The \usage entries must correspond to syntactically valid R code.
+See chapter ‘Writing R documentation files’ in the ‘Writing R
+Extensions’ manual.
+* checking Rd contents ... WARNING
+Argument items with no description in Rd object 'add_cols':
+  ‘where’
+
+* checking for unstated dependencies in examples ... OK
+* checking examples ... OK
+* checking for unstated dependencies in ‘tests’ ... WARNING
+'library' or 'require' call not declared from: ‘addcol’
+* checking tests ... ERROR
+  Running ‘testthat.R’
+Running the tests in ‘tests/testthat.R’ failed.
+Complete output:
+  > library(testthat)
+  Warning message:
+  package 'testthat' was built under R version 3.4.3 
+  > library(addcol)
+  Error in library(addcol) : there is no package called 'addcol'
+  Execution halted
+* DONE
+Status: 1 ERROR, 3 WARNINGs, 2 NOTEs
